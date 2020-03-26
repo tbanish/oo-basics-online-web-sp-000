@@ -12,6 +12,9 @@ class Shoe
   
   def condition=(condition)
     @condition = condition
+    if cobble
+      condition = "new"
+    end
   end
   
   def condition
@@ -20,7 +23,7 @@ class Shoe
   
   def cobble
     puts "Your shoe is as good as new!"
-    condition = "new"
+
   end
   
 end
